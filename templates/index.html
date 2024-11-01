@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Youtube video downloader</h1>
+        {% csrf_token %}
+        <label for="link">Enter URK:</label>
+        <input type="text" id="link" name="link"><br><br>
+        <input type="submit" value="Submit">
+        {% if flag %}
+        <label>{{ message }}</label><br><br>
+        {% endif %}
+    </form>
+    </body>
+</html>
